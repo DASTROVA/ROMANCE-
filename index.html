@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090711">
+<title>Для тебя ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stars"></div>
+<header><nav class="nav">
+<a class="brand" href="#home">♡ Для тебя 💗</a>
+<div class="navlinks"><a href="#home">Главная</a><a href="#about">О нас</a><a href="#reasons">Почему ты</a><a href="#moments">Моменты</a><a href="#end">В конце…</a></div>
+<button class="music" id="musicBtn" type="button">♫ Включить настроение</button>
+</nav></header>
+<main>
+<section class="hero" id="home">
+<span class="floating f1">♡</span><span class="floating f2">✧</span><span class="floating f3">♥</span>
+<div class="hero-inner"><div class="eyebrow">маленький сюрприз только для тебя</div>
+<h1 class="script">Моя любимая <span>♡</span></h1>
+<p>Я сделал этот маленький уголок интернета специально для тебя.<br>Здесь есть кое-что, что я хочу сказать тебе от всего сердца…</p>
+<button class="btn" onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})">Открыть мой секрет ♡</button>
+<a class="scrollhint" href="#about">Листай вниз ↓</a></div>
+</section>
+<section id="about"><h2 class="section-title script">Немного о нас</h2><p class="section-sub">Иногда самые важные чувства трудно уместить в обычное сообщение. Поэтому я собрал их здесь.</p>
+<div class="about-grid"><div class="glass"><div class="about-copy">Ты делаешь мои дни светлее, даже когда мы просто переписываемся или говорим о мелочах. С тобой обычные моменты становятся особенными, а улыбаться хочется чаще. Я ценю каждую минуту, каждый разговор и всё то хорошее, что есть между нами.<br><br>Этот сайт — маленькое напоминание: ты очень важна для меня.</div><div class="signature script">Я очень тобой дорожу ♡</div></div>
+<article class="letter"><h3 class="script">♡ Моё признание</h3><p>Милая моя,<br>мне хочется, чтобы ты всегда помнила, какая ты замечательная. Мне нравится твоя улыбка, твой характер и то тепло, которое ты приносишь в мою жизнь. Спасибо, что ты есть. Я не обещаю быть идеальным, но обещаю стараться, слушать тебя, уважать твои чувства и чаще напоминать, как много ты для меня значишь.</p><p class="sign script">С нежностью, твой ♡</p></article></div>
+</section>
+<section id="reasons"><h2 class="section-title script">Почему именно ты?</h2><p class="section-sub">Маленькие вещи, из которых складывается большое чувство.</p>
+<div class="reasons">
+<div class="reason"><div class="emoji">☺</div><h3>Твоя улыбка</h3><p>Она умеет сделать мой день лучше.</p></div>
+<div class="reason"><div class="emoji">♡</div><h3>Твоё сердце</h3><p>В тебе столько тепла и доброты.</p></div>
+<div class="reason"><div class="emoji">✧</div><h3>Твоя особенность</h3><p>Ты — это ты, и в этом твоя магия.</p></div>
+<div class="reason"><div class="emoji">☾</div><h3>Наши разговоры</h3><p>Даже простые темы становятся важными.</p></div>
+<div class="reason"><div class="emoji">∞</div><h3>Просто ты</h3><p>Мне не нужен повод, чтобы ценить тебя.</p></div>
+</div></section>
+<section id="moments"><h2 class="section-title script">Наши моменты ✨</h2><p class="section-sub">Здесь можно разместить ваши настоящие фотографии и воспоминания.</p>
+<div class="gallery">
+<div class="memory"><span>🌅 Моменты, которые хочется сохранить</span></div>
+<div class="memory"><span>🌷 Маленькие радости вместе</span></div>
+<div class="memory"><span>💌 Слова, которые идут от сердца</span></div>
+</div><p style="text-align:center;color:#cdb9cc;font-size:12px;margin-top:18px">Подсказка: замени эти картинки на ваши фотографии, когда будешь готов.</p>
+</section>
+<section id="end"><div class="promise"><span class="heart-big">♡</span><h2 class="section-title script">Спасибо, что ты есть…</h2><p>Я не знаю, каким будет каждый следующий день, но я хочу встречать его с добротой, заботой и искренностью. Пусть у тебя будет много поводов улыбаться. А если однажды тебе понадобится напоминание о том, как ты дорога, просто возвращайся сюда.</p><button class="btn" id="surpriseBtn">У меня есть ещё кое-что 💌</button></div></section>
+</main>
+<footer>Сделано с <span class="footer-heart">♥</span> специально для тебя · <span class="script" style="font-size:19px">Ты — моя особенная история</span></footer>
+<div id="surprise" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div style="font-size:44px">💗</div><h2 id="modalTitle" class="script">Ты очень дорога мне</h2><p>Если бы мне нужно было выбрать один маленький подарок для тебя, я бы выбрал возможность подарить тебе улыбку прямо сейчас. Береги своё прекрасное сердце. И помни: ты заслуживаешь уважения, заботы и самого доброго отношения. ♡</p><button class="close" id="closeModal">Обнять словами и закрыть ♡</button></div></div>
+<script src="script.js" defer></script>
+</body>
+</html>
